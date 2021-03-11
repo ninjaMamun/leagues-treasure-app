@@ -6,11 +6,11 @@
 
 ## Features
 
-> 1. Powered by powerful api
+> 1. Powered by The SportsDB api
 > 2. Responsive
 > 3. Get All Leagues Information
 > 4. Free forever
 
 ## Live Site Link: 
 
-> 
+> https://leagues-treasure.netlify.app/

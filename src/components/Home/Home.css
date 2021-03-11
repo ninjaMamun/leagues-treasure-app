@@ -8,13 +8,25 @@
 }
 .header-title{
     margin: auto;
-    color: white;
+    color: #FFFFFF;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    
+    
 }
 .homeHeader{
-    background: linear-gradient(0deg, rgba(0, 68, 255, 0.3), rgba(47, 0, 255, 0.3)), url("https://i.ibb.co/rt9PPhv/1337877.jpg");
+    background: url("../../Photo/beautiful-stadium-photo-wallpaper.jpg");
+    height: 400px;
+    margin-bottom: 50px;
+    background-position: center;
+    
+}
+/* .homeHeader{
+    background: url("../../Photo/Rectangle\ 21.png");
+    
     height: 400px;
     margin-bottom: 50px;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position:center;
-}
+    
+} */
+/* linear-gradient(0deg, rgba(243, 244, 247, 0.3), rgba(250, 250, 252, 0.3)), u */

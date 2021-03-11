@@ -16,10 +16,10 @@ const League = (props) => {
         fetch (url)
         .then(res => res.json())
         .then(data => setLeagueInfo(data.leagues[0]))
-    }, [])
+    }, [idLeague])
 
     return (
-        <div className='col-md-12 col-lg-4 col-sm-12'>
+        <div className='col-md-12 col-lg-4 col-sm-12 league-div'>
         <div className="card  d-flex justify-content-center align-items-center">
             <img src={leagueInfo.strBadge} className="card-img-top league-img" alt="..."></img>
                 <div className="card-body">

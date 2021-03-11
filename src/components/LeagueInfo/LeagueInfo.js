@@ -6,9 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVenusMars, faFutbol, faFlag, faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
 import maleImg from '../../Photo/Rectangle 28.png';
 import femaleImg from '../../Photo/female.png';
-import twitterImg from '../../Photo/Twitter.png';
-import facebookImg from '../../Photo/Facebook.png';
-import youtubeImg from '../../Photo/YouTube.png';
+import { faTwitter,faYoutube,faFacebook } from '@fortawesome/free-brands-svg-icons'; 
 
 
 const LeagueInfo = () => {
@@ -20,17 +18,21 @@ const LeagueInfo = () => {
             .then(response => response.json())
             .then(data => setLeagueDetails(data.leagues[0]))
     }, [leagueId])
-    const { strBadge, strLeague, strSport, dateFirstEvent, strCountry, strGender, strDescriptionEN, strDescriptionFR, strTwitter, strFacebook, strYoutube } = leagueDetails;
+    const { strBadge, strLeague, strSport, dateFirstEvent, strCountry, strGender, strDescriptionEN, strDescriptionFR, strTwitter, strFacebook, strYoutube, strBanner } = leagueDetails;
     console.log(strGender);
-
+    // const leagueDetailsHeaderStyle ={
+    //     background: `linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(${strB})`,
+    //     height: "400px",
+    //     marginBottom: "50px",
+    // }
 
 
 
 
     return (
 
-        <div>
-            <Header headerClass="leagueDetailsHeader">
+        <div className="League-info-div">
+            <Header headerClass="leagueDetailsHeader" >
                 <img className="details-header-img" src={strBadge} alt=""></img>
             </Header>
             <div className="leagueInfoDiv">
@@ -55,20 +57,22 @@ const LeagueInfo = () => {
                     <br></br>
                     <p> {strDescriptionFR} </p>
                 </div>
-                <div className="socialIcon-div d-flex justify-content-center">
+                <div className="socialIcon-div d-flex justify-content-center ">
                     <div className="col-md-1 d-flex justify-content-center">
-                        <a target="_blank" href={`https://${strTwitter}`}>
-                            <img className="icon-image" src={twitterImg} alt=''></img>
+                        <a target="_blank" rel="noreferrer" href={`https://${strTwitter}`}>
+                            <FontAwesomeIcon className="social-icon" icon={faTwitter} />
                         </a>
                     </div>
+
                     <div className="col-md-1 d-flex justify-content-center">
-                        <a target="_blank" href={`https://${strFacebook}`}>
-                            <img className="icon-image" src={facebookImg} alt=''></img>
+                        <a target="_blank" rel="noreferrer" href={`https://${strFacebook}`}>
+                            <FontAwesomeIcon className="social-icon" icon={faFacebook} />
                         </a>
                     </div>
+
                     <div className="col-md-1 d-flex justify-content-center">
-                        <a target="_blank" href={`https://${strYoutube}`}>
-                            <img className="icon-image" src={youtubeImg} alt=''></img>
+                        <a target="_blank" rel="noreferrer" href={`https://${strYoutube}`}>
+                            <FontAwesomeIcon className="social-icon youtube-icon" icon={faYoutube} />
                         </a>
                     </div>
                 </div>
