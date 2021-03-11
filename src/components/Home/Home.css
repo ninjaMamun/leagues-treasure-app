@@ -1,0 +1,20 @@
+.leagues-div{
+    width: 70%;
+    margin: auto;
+    
+}
+.home-div{
+    background : #f8f9fa;
+}
+.header-title{
+    margin: auto;
+    color: white;
+}
+.homeHeader{
+    background: linear-gradient(0deg, rgba(0, 68, 255, 0.3), rgba(47, 0, 255, 0.3)), url("https://i.ibb.co/rt9PPhv/1337877.jpg");
+    height: 400px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center;
+}
